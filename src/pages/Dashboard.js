@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 
 const baseURL = "https://randomuser.me/api/?results=500";
 
-export default function dashboard() {
+export default function Dashboard() {
   const post = useRandomUsers();
 
   if (!post) return null;

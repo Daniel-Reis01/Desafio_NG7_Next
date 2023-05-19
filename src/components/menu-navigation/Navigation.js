@@ -1,5 +1,6 @@
-import  "../Navigation.scss";
+import  "./Navigation.scss";
 import Link from "next/link";
+import Image from "next/image";
 export default function Navigation() {
   return (
     <nav className="navbar">
@@ -7,19 +8,19 @@ export default function Navigation() {
       <ul className="page-nav">
         <li>
           <Link href="/Dashboard">
-            <img src="dashboard.png" alt="image-dashboard" width={50} />
+            <Image src="/dashboard.png" alt="image-dashboard" width={50} height={50} />
             Dashboard
           </Link>
         </li>
         <li>
           <Link href="">
-            <img src="instituiçao.png" alt="image-instituitions" width={50} />
+            <Image src="/instituiçao.png" alt="image-instituitions" width={50}  height={50} />
             Instituctions
           </Link>
         </li>
         <li >
           <Link href="">
-            <img src="grafico.png" alt="image-graphic" width={50} />
+            <Image src="/grafico.png" alt="image-graphic" width={50}  height={50} />
             KPIs
           </Link>
         </li>
