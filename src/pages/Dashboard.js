@@ -4,6 +4,7 @@ import useRandomUsers from "@/Axios-Api/RandomApi";
 import  "../pages/Dashboard.scss";
 import React, { useState } from "react";
 import UserTable from "@/components/grid/UserTable";
+import Graphic from "@/components/graphics/Graphics";
 
 const baseURL = "https://randomuser.me/api/?results=500";
 
@@ -15,6 +16,7 @@ export default function Dashboard() {
   const [ageCount, setAgeCount] = useState(0);
   const [maleCount, setMaleCount] = useState(0);
   const [femaleCount, setFemaleCount] = useState(0);
+ 
 
   if (!users) return <div className="loading">Carregando...</div>;
 
@@ -107,18 +109,12 @@ element.style.backgroundColor = 'rgb(218, 228, 235)';
             </div>
           </div>
         </div>
+        <div className="graphic-user-api" >
+        <Graphic users={users} selectedAge={selectedAge} selectedGender={selectedGender} />
+        </div>
         
-        <div className="user-api">
+        <div className="user-api-table">
         <UserTable filteredUsers={filteredUsers} />
-          {/* {filteredUsers.map((user) => (
-            <div key={user.login.uuid}>
-            <p>
-            Name: {user.name.first} {user.name.last}
-            </p>
-            <p>Age: {user.dob.age}</p>
-            <p>Gender: {user.gender}</p>
-            </div>
-          ))} */}
         </div>
           </section>
     </>
