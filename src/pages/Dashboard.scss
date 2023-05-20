@@ -2,10 +2,70 @@
   margin: 0;
   padding: 0;
   border: 0;
+ 
+}
+.loading{
+  margin-left: 10%;
+  position: absolute;
 }
 section,
-section h1 {
-    color: black;
+.dashboard-user {
+  width: 100%;
+  color: black;
   position: absolute;
   margin-left: 10%;
+}
+.nav-dash-user {
+  color: black;
+  display: flex;
+  position: absolute;
+  margin-top: 2%;
+  margin-bottom: 30%;
+
+}
+.nav-dash-user h1 {
+  color: rgba(39, 38, 38, 0.76);
+}
+.age-select {
+  background-color: rgba(107, 130, 145, 0.89);
+  color: black;
+  margin-left: 60em;
+  outline: none;
+  width: 8em;
+  height: 3em;
+  border-radius: 20px;
+  text-align: center;
+  padding-left: 1%;
+  box-shadow: 0 5px 0 #345152;
+}
+.age-select:hover{
+  box-shadow: 0 5px 0 #5eb5b8;
+  background-color: rgba(45, 98, 133, 0.89);
+}
+.gender-select {
+  background-color: rgba(239, 243, 243, 0.89);
+  color: black;
+  margin-left: 1em;
+  outline: none;
+  width: 8em;
+  height: 3em;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 5px 0 #d4d09e;
+}
+.gender-select:hover{
+  background-color: rgb(36, 36, 36);
+  box-shadow: 0 5px 0 #97830f;
+}
+.show-counter-user {
+ padding-top: 10%;
+ padding-left:50% ;
+  display: flex;
+  position:absolute;
+  text-align: center;
+}
+.user-api {
+  margin-left: 10%;
+  padding-top: 50em;
+  position:absolute;
 }
