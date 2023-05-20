@@ -1,9 +1,9 @@
 "use client";
 
 import useRandomUsers from "@/Axios-Api/RandomApi";
-import styles from "../pages/Dashboard.scss";
-import axios from "axios";
+import  "../pages/Dashboard.scss";
 import React, { useState } from "react";
+import UserTable from "@/components/grid/UserTable";
 
 const baseURL = "https://randomuser.me/api/?results=500";
 
@@ -107,19 +107,20 @@ element.style.backgroundColor = 'rgb(218, 228, 235)';
             </div>
           </div>
         </div>
-      </section>
         
         <div className="user-api">
-          {filteredUsers.map((user) => (
+        <UserTable filteredUsers={filteredUsers} />
+          {/* {filteredUsers.map((user) => (
             <div key={user.login.uuid}>
-              <p>
-                Name: {user.name.first} {user.name.last}
-              </p>
-              <p>Age: {user.dob.age}</p>
-              <p>Gender: {user.gender}</p>
+            <p>
+            Name: {user.name.first} {user.name.last}
+            </p>
+            <p>Age: {user.dob.age}</p>
+            <p>Gender: {user.gender}</p>
             </div>
-          ))}
+          ))} */}
         </div>
+          </section>
     </>
   );
 }
