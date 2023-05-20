@@ -4,7 +4,7 @@ import axios from "axios";
  const useRandomUsers = () => {
 
     const baseURL = "https://randomuser.me/api/?results=500";
-    const [post, setPost] =useState(null);
+    const [users, setPost] =useState(null);
     
     useEffect(() => {
     
@@ -14,6 +14,6 @@ import axios from "axios";
         });
     }, []);
     
-    return post;
+    return users;
 };
 export default useRandomUsers

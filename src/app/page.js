@@ -1,11 +1,16 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import Navigation from '@/components/menu-navigation/Navigation'
+import Image from "next/image";
+import "./page.module.css";
+import Navigation from "@/components/menu-navigation/Navigation";
+import Dashboard from "@/pages/Dashboard";
 
-export default function Home() {
+
+export default function Page() {
+
+
   return (
-   <>
-   <Navigation />
-   </>
-  )
+    <>
+      <Dashboard />
+      <Navigation />
+    </>
+  );
 }

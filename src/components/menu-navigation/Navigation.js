@@ -1,8 +1,12 @@
 import  "./Navigation.scss";
 import Link from "next/link";
 import Image from "next/image";
+
+
 export default function Navigation() {
+ 
   return (
+      <>
     <nav className="navbar">
       <h1>LOGO</h1>
       <ul className="page-nav">
@@ -32,5 +36,6 @@ export default function Navigation() {
       <img src="user.png" alt="image-graphic" width={40} />
       </div>
     </nav>
+      </>
   );
 }
