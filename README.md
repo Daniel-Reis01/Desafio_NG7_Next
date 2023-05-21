@@ -25,6 +25,18 @@ Essa organização proporciona uma melhor manutenção do código, facilita a ad
 
 <p align="center">Como solicitado no briefing, fizemos a seleção dos clientes por idade e gênero no canto superior esquerdo do site. Temos dois seletores: um para idade e outro para gênero. Abaixo, exibimos a quantidade total de clientes, que é 500. Como essa informação não muda, não vimos motivo para criar um código que filtrasse isso da API e retornasse.
 
-Em seguida, apresentamos a quantidade total de clientes por faixa etária, separados por gênero. No terceiro e quarto quadros, exibimos a quantidade de clientes por gênero, sendo "female" para feminino e "male" para masculino.
+Em seguida, apresentamos a quantidade total de clientes por faixa etária, separados por gênero. No terceiro e quarto quadros da esquerda para a direita, exibimos a quantidade de clientes por gênero, sendo "female" para feminino e "male" para masculino.
 
 Logo abaixo, temos um gráfico mostrando a quantidade de clientes por região. No nosso caso, a região foi selecionada por países. A seguir, apresentamos uma planilha com todos os possíveis clientes, oferecendo paginação para facilitar a visualização.</p>
+<h4 align="center">Desafios</h4>
+<p align="center">Antes de mais nada, gostaria de expressar minha gratidão pelo projeto. Foi uma experiência muito enriquecedora para mim. Enfrentei três principais desafios ao longo do desenvolvimento.
+
+O primeiro deles foi trabalhar com uma planilha em JavaScript. Embora já tivesse criado planilhas anteriormente, utilizando HTML, descobrir ferramentas de planilha com paginação foi incrível. Fiquei empolgado ao perceber que essas ferramentas são poderosas e apresentam um nível de complexidade relativamente baixo. No entanto, compreender como aplicar essas funcionalidades e integrar a lógica necessária exigiu um tempo considerável de aprendizado.
+
+O segundo desafio foi lidar com a criação de gráficos. Levei um tempo para aprender a trabalhar com gráficos e entender como integrar essa funcionalidade ao projeto. A complexidade envolvida na manipulação e exibição dos dados de forma visual exigiu um esforço adicional.
+
+Por fim, a criação da lógica por trás das funcionalidades também foi um desafio significativo. A integração entre as diferentes partes do projeto e a garantia de que tudo funcionasse corretamente exigiu tempo e dedicação.
+
+Gostaria de ressaltar que, devido à curva de aprendizado e ao tempo necessário para lidar com os desafios mencionados, talvez não tenha conseguido implementar todas as funcionalidades e gráficos desejados. No entanto, estou plenamente ciente de que a utilização de gráficos, planilhas e a criação da lógica por trás dessas funcionalidades foram elementos que demandaram grande parte do tempo do projeto.
+
+Agradeço novamente pela oportunidade de participar deste projeto e estou aberto a qualquer feedback adicional para melhorar e aprimorar meu trabalho.</p>
