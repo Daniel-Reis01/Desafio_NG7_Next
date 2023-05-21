@@ -6,3 +6,6 @@ Primeiro, execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
+
+## ou use o vercel
+´´´
