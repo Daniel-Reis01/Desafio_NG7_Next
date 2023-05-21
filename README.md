@@ -20,3 +20,11 @@ npm run dev
 A estrutura do projeto foi organizada de forma escalável e modular. Os componentes principais foram agrupados na pasta "components", seguindo as boas práticas de desenvolvimento. A API foi separada em uma pasta específica, permitindo um gerenciamento mais eficiente das chamadas e facilitando a reutilização em diferentes partes do projeto. As páginas também foram colocadas em uma pasta separada, seguindo uma abordagem lógica e clara.
 
 Essa organização proporciona uma melhor manutenção do código, facilita a adição de novas páginas e componentes e promove a reutilização de código. Com essa estrutura, é possível construir e expandir o projeto de forma mais coesa e escalável. </p>
+
+<h4 align="center">Funcionalidades</h4>
+
+<p align="center">Como solicitado no briefing, fizemos a seleção dos clientes por idade e gênero no canto superior esquerdo do site. Temos dois seletores: um para idade e outro para gênero. Abaixo, exibimos a quantidade total de clientes, que é 500. Como essa informação não muda, não vimos motivo para criar um código que filtrasse isso da API e retornasse.
+
+Em seguida, apresentamos a quantidade total de clientes por faixa etária, separados por gênero. No terceiro e quarto quadros, exibimos a quantidade de clientes por gênero, sendo "female" para feminino e "male" para masculino.
+
+Logo abaixo, temos um gráfico mostrando a quantidade de clientes por região. No nosso caso, a região foi selecionada por países. A seguir, apresentamos uma planilha com todos os possíveis clientes, oferecendo paginação para facilitar a visualização.</p>
