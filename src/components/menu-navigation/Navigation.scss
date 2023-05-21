@@ -2,13 +2,12 @@
   margin: 0;
   padding: 0;
   border: 0;
- 
 }
 .navbar {
   background-color: rgba(133, 150, 160, 0.89);
   width: 7%;
   height: 15%;
-  padding: 1em;
+  padding: 0.5%;
   padding-bottom: 50%;
   display: flex;
   flex-direction: column;
@@ -21,24 +20,25 @@
   margin-bottom: 30%;
   font-size: small;
 }
-.dash-navbar{
+.dash-navbar {
+  margin-right: 2em;
   background-color: rgba(133, 150, 160, 0.89);
   color: rgba(107, 130, 145, 0.89);
-  padding: 1.23em;
+  padding: 8.1%;
   width: 7.7em;
   height: auto;
 }
-.graphic{
-  background-color: rgba(133, 150, 160, 0.247);
+.graphic {
+  background-color: rgba(133, 150, 160, 0.055);
   color: rgba(107, 130, 145, 0.89);
-  padding: 1.25em;
+  padding: 7.9%;
   width: 7.7em;
   height: auto;
 }
-.instituitions{
-  background-color: rgba(133, 150, 160, 0.247);
+.instituitions {
+  background-color: rgba(133, 150, 160, 0.082);
   color: rgba(107, 130, 145, 0.89);
-  padding: 1.2em;
+  padding: 7.9%;
   width: 7.7em;
   height: auto;
 }
@@ -48,9 +48,7 @@
 .instituitions:hover {
   background-color: rgb(218, 228, 235);
   color: rgba(107, 130, 145, 0.89);
-  padding: 1.58em;
-  width: 7em;
-  height: auto;
+  
 }
 
 .navbar a,
@@ -67,5 +65,80 @@ h1 {
 .settings-nav img {
   display: flex;
   flex-direction: column;
-  margin-top:2em ;
+  margin-top: 2em;
+}
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    width: 10%;
+    height: 100em;
+  }
+  .dash-navbar {
+    margin-right: 1.6em;
+    padding: 9.5%;
+    width: 7em;
+    height: auto;
+  }
+  .graphic {
+    padding: 6.4%;
+    width: 7em;
+    height: auto;
+  }
+  .instituitions {
+    padding: 7%;
+    width: 6.9em;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 13%;
+    height: 110em;
+  }
+  .dash-navbar {
+    margin-right: 1.5em;
+    padding: 8.1%;
+    width: 7em;
+    height: auto;
+  }
+  .graphic {
+    padding: 5.4%;
+    width: 7em;
+    height: auto;
+  }
+  .instituitions {
+    padding: 7%;
+    width: 6.9em;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
 }

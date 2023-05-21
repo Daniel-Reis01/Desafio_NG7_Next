@@ -23,7 +23,7 @@ const UserTable = ({ filteredUsers }) => {
     };
   }, [filteredUsers]);
 
-  return <div  className='grid-js' style={{ width: '1100px', height: '300px' }} >
+  return <div>
   <div ref={tableRef}></div>
 </div>
 };

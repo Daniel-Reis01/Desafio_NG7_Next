@@ -12,13 +12,13 @@ export default function Navigation() {
       <ul className="page-nav">
         <li className="dash-navbar">
           <Link href="/">
-            <Image src="/dashboard.png" alt="image-dashboard" width={50} height={50} />
+            <Image src="/dashboard.png" alt="image-dashboard" width={50} height={50} /><br/>
             Dashboard
           </Link>
         </li>
         <li className="instituitions">
           <Link href="">
-            <Image src="/instituiçao.png" alt="image-instituitions" width={50}  height={50} />
+            <Image src="/instituiçao.png" alt="image-instituitions" width={50}  height={50} /><br/>
             Instituctions
           </Link>
         </li>
@@ -36,7 +36,9 @@ export default function Navigation() {
       <img src="user.png" alt="image-graphic" width={40} />
       </div>
     </nav>
-    
+    <div className="menu-icon">
+      <img src="menu.png"/>
+    </div>
       </>
   );
 }
