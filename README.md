@@ -6,6 +6,8 @@ Primeiro, execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-
+```
 ## ou use o vercel
-´´´
+
+[link para o site na vercel](https://desafio-ng-7-next.vercel.app/)
+
