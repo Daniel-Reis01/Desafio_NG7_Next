@@ -2,9 +2,13 @@
   margin: 0;
   padding: 0;
   border: 0;
- 
+  font-family: "Libre Baskerville", serif;
+  font-family: "Merriweather", serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
-.loading{
+.loading {
   margin-left: 10%;
   position: absolute;
 }
@@ -21,7 +25,6 @@ section,
   position: absolute;
   margin-top: 2%;
   margin-bottom: 30%;
-
 }
 .nav-dash-user h1 {
   color: rgba(39, 38, 38, 0.76);
@@ -38,7 +41,7 @@ section,
   padding-left: 1%;
   box-shadow: 0 5px 0 #345152;
 }
-.age-select:hover{
+.age-select:hover {
   box-shadow: 0 5px 0 #5eb5b8;
   background-color: rgba(45, 98, 133, 0.89);
 }
@@ -53,24 +56,35 @@ section,
   text-align: center;
   box-shadow: 0 5px 0 #727272;
 }
-.gender-select:hover{
+.gender-select:hover {
   background-color: rgb(158, 157, 157);
   box-shadow: 0 5px 0 #f6f8e7;
 }
 .show-counter-user {
- padding-top: 10%;
- padding-left:50% ;
+  padding-top: 10%;
   display: flex;
-  position:absolute;
+  position: absolute;
   text-align: center;
 }
-.graphic-user-api{
-  margin-left: 3%;
-  margin-top: 19%;
+.show-client {
+  display: flex;
+  background-color: #fdfdfd;
+  color: #727272;
+  text-transform: uppercase;
+  width: 7em;
+  height: 2.5em;
+  padding: 10%;
+  margin-left: 23%;
+  border: 1px solid rgba(19, 19, 19, 0.103);
+}
+.graphic-user-api {
+  width: 50%;
+  margin-left: 6%;
+  margin-top: 23%;
   position: absolute;
 }
 .user-api-table {
   margin-left: 6%;
-  margin-top: 40%;
-  position:absolute;
+  margin-top: 50%;
+  position: absolute;
 }

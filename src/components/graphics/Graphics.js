@@ -1,5 +1,5 @@
 import React from "react";
-import { Bar } from "react-chartjs-2";
+import { Bar, Doughnut } from "react-chartjs-2";
 import { Chart, registerables, CategoryScale } from "chart.js";
 
 Chart.register(CategoryScale);
@@ -61,12 +61,33 @@ function Graphic({ users, selectedAge, selectedGender }) {
     ],
   };
 
+  const newDoughnutData = {
+    labels: ["Label 1", "Label 2", "Label 3"],
+    datasets: [
+      {
+        data: [10, 20, 30],
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+        ],
+        borderColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+        ],
+        borderWidth: 2,
+      },
+    ],
+  };
+
   return (
-    <div style={{ maxWidth: "500px", margin: "0 auto" }}>
-      <div style={{ position: "relative", height: "300px" }}>
-        <Bar data={newData} />
+    <>
+      <div className="graphics">
+        <Bar data={newData}  />
+        {/* <Doughnut data={newDoughnutData}  /> */}
       </div>
-    </div>
+    </>
   );
 }
 

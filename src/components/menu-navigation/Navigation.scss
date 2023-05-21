@@ -24,7 +24,21 @@
 .dash-navbar{
   background-color: rgba(133, 150, 160, 0.89);
   color: rgba(107, 130, 145, 0.89);
-  padding: 1.22em;
+  padding: 1.23em;
+  width: 7.7em;
+  height: auto;
+}
+.graphic{
+  background-color: rgba(133, 150, 160, 0.247);
+  color: rgba(107, 130, 145, 0.89);
+  padding: 1.25em;
+  width: 7.7em;
+  height: auto;
+}
+.instituitions{
+  background-color: rgba(133, 150, 160, 0.247);
+  color: rgba(107, 130, 145, 0.89);
+  padding: 1.2em;
   width: 7.7em;
   height: auto;
 }
@@ -34,7 +48,7 @@
 .instituitions:hover {
   background-color: rgb(218, 228, 235);
   color: rgba(107, 130, 145, 0.89);
-  padding: 1em;
+  padding: 1.58em;
   width: 7em;
   height: auto;
 }

@@ -24,7 +24,7 @@ export default function Navigation() {
         </li>
         <li className="graphic" >
           <Link href="">
-            <Image src="/grafico.png" alt="image-graphic" width={50}  height={50} />
+            <Image src="/grafico.png" alt="image-graphic" width={50}  height={50} /><br/>
             KPIs
           </Link>
         </li>

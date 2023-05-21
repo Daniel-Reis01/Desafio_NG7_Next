@@ -1,7 +1,7 @@
 "use client";
 
 import useRandomUsers from "@/Axios-Api/RandomApi";
-import  "../pages/Dashboard.scss";
+import "../pages/Dashboard.scss";
 import React, { useState } from "react";
 import UserTable from "@/components/grid/UserTable";
 import Graphic from "@/components/graphics/Graphics";
@@ -16,18 +16,16 @@ export default function Dashboard() {
   const [ageCount, setAgeCount] = useState(0);
   const [maleCount, setMaleCount] = useState(0);
   const [femaleCount, setFemaleCount] = useState(0);
- 
 
   if (!users) return <div className="loading">Carregando...</div>;
 
   const handleAgeChange = (event) => {
     setSelectedAge(event.target.value);
-    const SelectedAge = event.target.value;
+    const selectedAge = event.target.value;
 
-    const count = users.filter(
-      (user) => user.dob.age >= parseInt(selectedAge)
-    ).length;
-    setAgeCount(count);
+const count = users.filter((user) => user.dob.age >= parseInt(selectedAge)).length;
+setAgeCount(count);
+
   };
 
   const handleGenderChange = (event) => {
@@ -53,10 +51,9 @@ export default function Dashboard() {
     return true;
   });
 
-const element = document.querySelector('.dash-navbar');
+  const element = document.querySelector(".dash-navbar");
 
-element.style.backgroundColor = 'rgb(218, 228, 235)';
-
+  element.style.backgroundColor = "rgb(218, 228, 235)";
 
   return (
     <>
@@ -95,28 +92,48 @@ element.style.backgroundColor = 'rgb(218, 228, 235)';
             </select>
           </div>
           <div className="show-counter-user">
-            <div>
-              <img src="/Usuarios.png" width={51} height={50}/>
+            <div className="show-client">
+              <img src="/Usuarios.png" width={51} height={50} />
+              <div>
+              <p> ALL Client</p>
+              <p>500</p>
+              </div>
+            </div>
+            <div className="show-client">
+              <img src="/Usuarios.png" width={51} height={50} />
+              <div>
+              <p>Client For Age</p>
               <p>{ageCount}</p>
+              </div>
             </div>
-            <div>
-              <img src="/masculino.png" width={50} height={50}/>
+            <div className="show-client">
+              <img src="/masculino.png" width={50} height={50} />
+              <div>
+              <p>Male Client</p>
               <p>{maleCount}</p>
+              </div>
             </div>
-            <div>
-              <img src="/feminino.png" width={50} height={50}/>
+            <div className="show-client">
+              <img src="/feminino.png" width={50} height={50} />
+              <div>
+              <p>Female Client</p>
               <p>{femaleCount}</p>
+              </div>
             </div>
           </div>
         </div>
-        <div className="graphic-user-api" >
-        <Graphic users={users} selectedAge={selectedAge} selectedGender={selectedGender} />
+        <div className="graphic-user-api">
+          <Graphic
+            users={users}
+            selectedAge={selectedAge}
+            selectedGender={selectedGender}
+          />
         </div>
-        
+
         <div className="user-api-table">
-        <UserTable filteredUsers={filteredUsers} />
+          <UserTable filteredUsers={filteredUsers} />
         </div>
-          </section>
+      </section>
     </>
   );
 }
